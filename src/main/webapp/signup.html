@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Smart health system</title>
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href=
+	"https://maxcdn.bootstrapcdn.com/bootstrap/
+	4.0.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src=
+	"https://ajax.googleapis.com/ajax/libs/
+	jquery/3.3.1/jquery.min.js">
+	</script>
+	<!-- Popper JS -->
+	<script src=
+	"https://cdnjs.cloudflare.com/ajax/libs/
+	popper.js/1.12.9/umd/popper.min.js">
+	</script>
+	<!-- Latest compiled JavaScript -->
+	<script src=
+	"https://maxcdn.bootstrapcdn.com/bootstrap/
+	4.0.0/js/bootstrap.min.js">
+	</script>
+
+<link rel="stylesheet" href="stylesignup.css">
+</head>
+<body style="background-image: url('doc.jpg')">
+<form  class="form-horizontal" action="register" method="post">
+  <div class="container">
+    <h1>Register</h1>
+    <small>Please fill in this form to create an account.</small>
+    <hr>
+
+    <label for="firstname"><b>First name</b></label>
+    <input  class="form-control"  type="text" placeholder="Enter firstname" name="firstname" id="firstname" required>
+<br>
+<br>
+ <label for="lastname"><b>Lastname</b></label>
+    <input  class="form-control" type="text" placeholder="Enter lastname" name="lastname" id="lastname" required>
+<br>
+<br>
+<div class="form-group">
+ <label for="email"><b>Email</b></label>
+    <input  class="form-control" type="text" placeholder="Enter Email" name="emailid" id="email" required>
+    <small id="emailvalid" class="form-text
+                text-muted invalid-feedback">
+                    Your email must be a valid email
+              </small>
+              
+              
+</div>
+<br>
+<br>
+<div class="form-group">
+    <label for="username"><b>Username</b></label>
+    <input   class="form-control" type="text" placeholder="Enter Username" name="username" id="usernames" required>
+<h5 id="usercheck" style="color: red;" >
+                    **Username is missing
+                    </h5>
+</div>
+<br>
+<br> 
+
+
+    <label for="date"><b>Date of birth</b></label>
+    <input  class="form-control" type="text" placeholder="Enter DOB" name="date" id="date" required>
+<br>
+<br>
+
+    <label for="gender"><b>Gender</b></label>
+    <input  class="form-control" type="text" placeholder="Enter gender" name="gender" id="gender" required>
+<br>
+<br>
+ <div class="form-group">
+    <label for="password"><b>Password</b></label>
+    <input   class="form-control" type="password" placeholder="Enter Password" name="password" id="password" required>
+<h5 id="passcheck" style="color: red;">
+                **Please Fill the password
+              </h5>
+</div>
+<br>
+<br>
+<div class="form-group">
+    <label for="phoneno"><b>Contact</b></label>
+    <input   class="form-control" type="text" placeholder="Enter contact" name="phoneno" id="phoneno" required>
+    <h5 id="phonecheck" style="color: red;">
+                **Please Fill the Contact
+              </h5>
+</div>
+<br>
+<br>  
+ 
+    <button  class="btn btn-primary"  id="submitbtn" type="submit" name="signup" class="registerbtn">Register</button>
+
+  </div>
+<br>
+<br>
+  <div class="container signin">
+    <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+  </div>
+</form>
+	<!-- Including app.js jQuery Script -->
+	<script src="signupJquery.js"></script>
+
+
+	
+</body>
+</html>

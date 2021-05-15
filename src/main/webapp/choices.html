@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Smart health system</title>
+
+
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="stylechoices.css">
+
+
+<body  style="background-image: url('doctor1.jpg')";>
+
+<div class="container">
+	<h1>Menu</h1>
+	
+
+	<form action="menuPage" method="post">
+		<label class="container">Book an appointment <input
+			type="radio" value="book" name="radiob" required> <span
+			class="checkmark"></span>
+		</label> 
+		<label class="container">View an appointment <input
+			type="radio" value="view" name="radiob" required> <span
+			class="checkmark"></span>
+		</label> 
+		
+		
+		<label class="container">
+		Update/Delete you appointment
+		
+		    <input type="radio" value="edit" name="radiob" required>
+		
+		    <span class="checkmark"></span>                        
+		    
+		</label>
+		
+			
+		<button class="btn btn-info" type="submit" name="next">Submit</button>
+		
+		<br>
+		<br>
+		<br>
+		
+		
+			
+	</form>
+
+<button class="btn btn-info" type="submit" id="hide">Hide</button>
+<button class="btn btn-info" type="submit" id="show">Show</button>
+</div>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(e){
+    e.preventDefault();
+	  $("form").hide();
+    
+  });
+  $("#show").click(function(){
+    $("form").show();
+  });
+});
+</script>
+</body>
+</html>
